@@ -4,8 +4,5 @@
     "singleQuote": true,
     "semi": false,
     "plugins": ["prettier-plugin-tailwindcss"],
-    "bracketSpacing": true,
-    "importOrder": ["^components/(.*)$", "^[./]"],
-    "importOrderSeparation": true,
-    "importOrderSortSpecifiers": true
+    "bracketSpacing": true
 }

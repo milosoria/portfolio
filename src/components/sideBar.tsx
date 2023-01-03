@@ -12,9 +12,9 @@ const SideBar: React.FC = () => {
     return (
         <div className="flex">
             <button
-                className={`absolute z-50 p-5 ${
-                    isOpen ? 'invisible' : 'visible'
-                }`}
+                className={
+                    'absolute z-50 p-5 ' + (isOpen ? 'invisible' : 'visible')
+                }
                 onClick={() => setIsOpen(!isOpen)}
             >
                 <TiThMenu
@@ -24,9 +24,12 @@ const SideBar: React.FC = () => {
                 />
             </button>
             <div
-                className={`absolute inset-0 h-full flex-col bg-black-200 p-5 text-white duration-300 ease-in-out sm:w-40 md:w-48 lg:w-52 ${
-                    `${isOpen}` ? 'translate-x-0 ' : '-translate-x-full'
-                }`}
+                className={
+                    'absolute inset-0 h-full flex-col bg-black-200 p-5 text-white duration-300 ease-in-out sm:w-40 md:w-48 lg:w-52 ' +
+                    (isOpen
+                        ? 'translate-x-0 '
+                        : '-translate-x-full')
+                }
             >
                 <div className="flex flex-row">
                     <h2 className="flex-1 align-middle text-2xl font-semibold text-white">
@@ -104,11 +107,11 @@ const SideBar: React.FC = () => {
             </div>
 
             <div
-                className={`duration-300 ease-in-out ${
-                    isOpen
+                className={
+                    'duration-300 ease-in-out ' + (isOpen
                         ? 'sm:translate-x-40  md:translate-x-48 lg:translate-x-52'
-                        : '-translate-x-0'
-                }`}
+                        : '-translate-x-0')
+                }
             >
                 <Outlet />
             </div>
