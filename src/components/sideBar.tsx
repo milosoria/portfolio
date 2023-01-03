@@ -26,9 +26,7 @@ const SideBar: React.FC = () => {
             <div
                 className={
                     'absolute inset-0 h-full flex-col bg-black-200 p-5 text-white duration-300 ease-in-out sm:w-40 md:w-48 lg:w-52 ' +
-                    (isOpen
-                        ? 'translate-x-0 '
-                        : '-translate-x-full')
+                    (isOpen ? 'translate-x-0 ' : '-translate-x-full')
                 }
             >
                 <div className="flex flex-row">
@@ -108,7 +106,8 @@ const SideBar: React.FC = () => {
 
             <div
                 className={
-                    'duration-300 ease-in-out ' + (isOpen
+                    'duration-300 ease-in-out ' +
+                    (isOpen
                         ? 'sm:translate-x-40  md:translate-x-48 lg:translate-x-52'
                         : '-translate-x-0')
                 }
